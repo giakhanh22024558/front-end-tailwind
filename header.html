@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bf7b127d49.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="./dist/output.css" rel="stylesheet"> -->
+    <style>
+        .marker::before{
+        content: "|";
+        margin-right: 1rem;
+        color:  white;
+        font-weight: 400;
+    }
+    </style>
+</head>
+<body>
+    <div id="global-header-top" class="shadow-lg hidden md:flex bg-[#0066C1] justify-center px-12 lg:px-2 py-2 text-white items-center">
+        <div class="flex w-full lg:pr-12 xl:pr-0 flex-row gap-10 justify-center lg:justify-end max-w-[1163.2px]">
+            <div class="hidden md:flex flex-row gap-5 md:max-lg:self-start md:max-lg:flex-1">
+                <a href="#"><i class="text-lg fa-regular fa-newspaper"></i>  <span class="text-sm font-medium">Trang tin công nghệ</span></a>
+                <a href="#"><i class="text-lg fa-solid fa-bolt"></i>  <span class="text-sm font-medium">Trang khuyến mãi</span></a>
+            </div>
+            <nav class="flex text-xs md:text-sm flex-row gap-5 font-bold justify-center items-center">
+                <a href="#">Đăng ký</a> |
+                <a href="#">Đăng nhập</a>
+            </nav>
+        </div>
+    </div>
+    <div class="global-header-bottom bg-[#005BAD] flex flex-row py-2 gap-5 px-2 xl:gap-10 justify-center items-center">
+        <div class="small-layout flex flex-row gap-3 sm:gap-10 w-full justify-center items-center md:hidden">
+            <div class="flex flex-1 justify-start">
+                <button class="block md:hidden text-white"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <img class="w-[142px] sm:w-auto" src="https://hoanghapc.vn/static/assets/2022/images/Logo_hoanghapc.png" alt="">
+            <div class="flex-1 flex justify-end gap-3">
+                <a class="uppercase" href="#">
+                    <i class="fa-solid fa-magnifying-glass text-lg" style="color: #ffffff;"></i>
+                </a>
+                <a class="uppercase" href="#">
+                    <i class="fa-solid fa-cart-shopping text-lg" style="color: #ffffff;"></i>
+                </a>
+            </div>  
+        </div>
+        <div class="hidden md:flex truncate flex-col gap-3">
+            <img src="https://hoanghapc.vn/static/assets/2022/images/Logo_hoanghapc.png" alt="">
+            <button class="md:inline overflow-hidden text-ellipsis text-xs lg:text-sm font-medium text-white border-[1px] border-white p-2 rounded-full">
+                <i class="mr-2 fa-solid fa-list"></i><span class="">Danh mục sản phẩm</span>
+            </button>
+        </div>
+        <div class="hidden md:flex flex-col gap-3 justify-center items-center h-full">
+            <div class="py-3 w-[40rem] xl:w-[44.397rem]">
+                <nav class="uppercase font-medium justify-between flex flex-row text-xs xl:text-sm gap-5 xl:gap-8 text-white">
+                    <a href="#"><i class="fa-solid fa-hand-holding-dollar"></i><span class="ml-2">Hỗ trợ trả góp</span></a>
+                    <a href="#"><i class="fa-solid fa-tag"></i><span class="ml-2">Giá ưu đãi nhất</span></a>
+                    <a href="#"><i class="fa-solid fa-shield"></i><span class="ml-2">bảo hành tận nhà</span></a>
+                    <a href="#"><i class="fa-solid fa-truck"></i><span class="ml-2">miễn phí vận chuyển</span></a>
+                </nav>
+            </div>
+            <div class="flex w-[40rem] xl:w-[45.056rem] self-end flex-row justify-center items-center gap-3 bg-white rounded-full ">
+                <div class="border-r-[1px] border-black px-2 xl:px-5 truncate">
+                    <a class="text-gray-300 text-ellipsis" href="#">Danh mục...</a>
+                </div>
+                <input class="bg-transparent w-[35rem] focus: outline-none" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                <button class="bg-gradient-to-r from-blue-500 h-fit w-fit border-[1px] p-2 rounded-full text-xl text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="hidden lg:flex flex-col gap-2">
+            <div class="flex flex-row gap-3 xl:gap-5 justify-center items-center">
+                <div class="hotline-section flex flex-row border-r-[1px] px-2 xl:px-3">
+                    <div class="flex flex-row gap-2 text-white text-sm justify-items-center items-center">
+                        <button class="bg-white h-fit w-fit border-[1px] border-blue-500 p-2 rounded-full text-md xl:text-xl text-blue-600"><i class="fa-solid fa-phone"></i></button>
+                        <a href="#">Hotline <br> <span class="font-bold text-xs xl:text-md">Mua hàng</span></a>
+                    </div>
+                </div>
+                <button class="bg-white h-fit w-fit border-[1px] border-blue-500 p-2 rounded-full text-md xl:text-xl text-blue-600"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <button class="text-white text-sm xl:text-md bg-amber-500 border-2 border-white rounded-full py-2 font-medium"><i class="fa-solid fa-desktop mr-2"></i>Xây dựng cấu hình</button>
+        </div>
+    </div>
+
+    <div class="fixed hidden lg:flex items-center bottom-[180px] right-[10px] bg-white px-2 border-[1px] border-gray-100 rounded-lg hover:text-blue-500 shadow-md">
+        <img class="h-[45px] w-[45px] mr-2 inline-block"src="./image/mes.png" alt="">
+        <button class="text-sm">
+          <strong>Chat Facebook <br>
+        </strong><span class="text-gray-400">(8h20 - 20h00)</span> 
+        </button>
+    </div>
+    
+    <div class="fixed hidden lg:flex items-center bottom-[120px] right-[10px] bg-white px-2 border-[1px] border-gray-100 rounded-lg hover:text-blue-500 shadow-md w-[163.32px]">
+        <img class="h-[45px] w-[45px] mr-2 inline-block"src="./image/zalo.png" alt="">
+        <button class="text-sm">
+            <strong>Chat Zalo <br>
+            </strong><span class="text-gray-400">(8h20 - 20h00)</span> 
+        </button>
+    </div>
+
+    <div class="fixed hidden lg:flex items-center bottom-[60px] right-[10px] bg-white px-2 border-[1px] border-gray-100 rounded-lg hover:text-blue-500 shadow-md w-[163.32px]">
+        <img class="h-[45px] w-[45px] mr-2 inline-block"src="./image/messages.png" alt="">
+        <button class="text-sm">
+            <strong>Nhắn tin <br>
+            </strong><span class="text-gray-400">(8h20 - 20h00)</span> 
+        </button>
+    </div>
+
+    <!--bottom nav bar when resize to small screen-->
+    <div class="mobile-side-content block lg:hidden w-full h-fit bg-[#005BAD] fixed start-0 bottom-0 z-[20]">
+        <nav class="flex flex-row gap-y-2 py-3 gap-x-8 sm:gap-x-18 justify-center items-center text-xs text-white text-center p-1 text-2xl"> 
+            <a href="#" class="text-xs text-white text-center text-2xl"><i class="mr-2 fa-solid fa-phone"></i>Hotline</a> |
+            <a href="#" class="text-xs text-white text-center text-2xl"><i class="mr-2 fa-brands fa-facebook-messenger"></i>Facebook</a> |
+            <a href="#" class="text-xs text-white text-center text-2xl"><img class="w-[15px] h-[15px] inline mr-2" src="image/icon_zalo.png" alt="">Zalo</a> |
+            <a href="#" class="text-xs text-white text-center text-2xl"><i class="mr-2 fa-solid fa-message"></i>Nhắn tin</a> 
+        </nav>
+    </div>
+    <!--showroom button when resize to small screen-->
+    <div class="fixed bottom-12 hidden shadow-lg sm:flex lg:hidden right-1">
+        <button class="text-white text-sm xl:text-md bg-amber-500 border-2 border-white rounded-md px-2 py-2 font-medium"><i class="fa-solid fa-desktop mr-2"></i>Xây dựng cấu hình</button>
+    </div>
+
+    <!--cart button when resize to smaller screen-->
+    <div class="fixed bottom-24 right-2 hidden md:flex lg:hidden">
+        <button class="bg-blue-500 h-fit w-fit border-2 border-blue-500 p-2 rounded-full text-md xl:text-xl text-white"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+
+</body>
+</html>
